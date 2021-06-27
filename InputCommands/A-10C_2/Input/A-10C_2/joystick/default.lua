@@ -23,5 +23,14 @@ return {
 		{down = iCommandRightEngineStop, up = iCommandRightEngineStart, name = _('Right Throttle OFF/IDLE'), category = _('Special')},
 		{down = iCommandPlane_FLAPS_UP, up = iCommandPlane_FLAPS_MNR_from_UP,name = _('Flaps Up/MR'), category = _('Special')},
 		{down = iCommandPlane_FLAPS_DN, up = iCommandPlane_FLAPS_MNR_from_DN,name = _('Flaps MR/Dn'), category = _('Special')},
+		----custom
+		{down = 3004, cockpit_device_id = 7, value_down = 1.0,  name = _('Targeting Pod Power On'), category = _('custom')},     
+                {down = 3004, cockpit_device_id = 7, value_down = 0,  name = _('Targeting Pod Power Off'), category = _('custom')},        
+                {down = 3006, cockpit_device_id = 7, value_down = 1.0,  name = _('HUD Mode Day'), category = _('custom')}, 
+                {down = 3006, cockpit_device_id = 7, value_down = 0,  name = _('HUD Mode Night'), category = _('custom')},
+		{down = iCommandPlaneAHCPAltSCEBaro, 	up = iCommandPlaneAHCPAltSCEDelta,	name = _('ALT SCE switch BARO else DELTA'), category = _('custom')},
+                {down = iCommandPlaneAHCPAltSCERadar, 	up = iCommandPlaneAHCPAltSCEDelta,	name = _('ALT SCE switch RADAR else DELTA'), category = _('custom')},
+		{down = iCommandPlaneLGPTaxiLight, 	up =	iCommandPlaneLGPLightsOff,	name = _('Taxi Lights On else off'), category = _('custom')},
+                {down = iCommandPlaneLGPLandLight, 	up =	iCommandPlaneLGPLightsOff,	name = _('Land Lights On else off'), category = _('custom')},
 	}
 }
